@@ -4,7 +4,7 @@
     "allowJs": true,
     "strict": true,
     "paths": {
-      "vlm-dcl": ["node_modules\\vlm-dcl\\dist\\index.d.ts", "..\\..\\Libraries\\vlm\\dist\\index.d.ts"],
+      "vlm-dcl": ["node_modules\\vlm-dcl\\dist\\index.d.ts"],
     },
     "baseUrl": "."
   },
