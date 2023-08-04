@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@dcl/eslint-config": "^1.0.1",
-    "decentraland-ecs": "latest"
+    "decentraland-ecs": "^6.12.0"
   },
   "engines": {
     "node": ">=14.0.0",
@@ -22,9 +22,9 @@
     "yarn": "please use npm"
   },
   "dependencies": {
-    "vlm-dcl": "^0.0.1-20230730193831.commit-b962184"
+    "colyseus.js": "^0.15.10"
   },
-  "bundleDependencies": [
-    "vlm-dcl"
+  "bundledDependencies": [
+    "colyseus.js"
   ]
 }
