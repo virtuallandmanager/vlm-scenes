@@ -22,9 +22,9 @@
     "yarn": "please use npm"
   },
   "dependencies": {
-    "colyseus.js": "^0.15.10"
+    "vlm-dcl": "^0.0.1-20230807083209.commit-50ce7af"
   },
-  "bundledDependencies": [
-    "colyseus.js"
+  "bundleDependencies": [
+    "vlm-dcl"
   ]
 }
