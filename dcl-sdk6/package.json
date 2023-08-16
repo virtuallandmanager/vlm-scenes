@@ -22,7 +22,7 @@
     "yarn": "please use npm"
   },
   "dependencies": {
-    "vlm-dcl": "^0.0.1-20230807083209.commit-50ce7af"
+    "vlm-dcl": "^0.0.1-rc"
   },
   "bundleDependencies": [
     "vlm-dcl"

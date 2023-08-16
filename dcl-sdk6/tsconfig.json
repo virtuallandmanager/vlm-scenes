@@ -9,6 +9,8 @@
     "paths": {
       "vlm-dcl": [
         "node_modules\\vlm-dcl\\dist\\index.d.ts",
+        "node_modules/vlm-dcl/dist/index.d.ts",
+        "../../../1_Integrations/vlm-dcl/dist/index.d.ts"
       ]
     },
     "baseUrl": "."
