@@ -1,14 +1,10 @@
-///<reference lib="es2015.symbol" />
-///<reference lib="es2015.symbol.wellknown" />
-///<reference lib="es2015.collection" />
-///<reference lib="es2015.iterable" />
 import VLM, { WidgetConfig } from "vlm-dcl";
 
 const message = new Entity("Message");
 const ball = new Entity("box");
 engine.addEntity(ball);
 const messageText = new TextShape("Loading data from VLM...");
-messageText.fontSize = 3;
+messageText.fontSize = 6;
 message.addComponent(messageText);
 message.addComponent(new Transform({ position: new Vector3(8, 4, 8) }));
 engine.addEntity(message);
