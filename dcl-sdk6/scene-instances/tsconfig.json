@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outFile": "./bin/game.js",
+    "allowJs": true,
+    "strict": true,
+    "paths": {
+      "dcl-vlm": [
+        "node_modules\\dcl-vlm\\dist\\index.d.ts",
+        "..\\..\\vlm\\dist\\index.d.ts"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
+  "compileOnSave": false
+}
