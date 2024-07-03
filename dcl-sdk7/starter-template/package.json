@@ -10,9 +10,9 @@
     "upgrade-sdk:next": "npm install --save-dev @dcl/sdk@next"
   },
   "devDependencies": {
-    "@dcl/asset-packs": "latest",
-    "@dcl/js-runtime": "7.3.35",
-    "@dcl/sdk": "^7.3.34"
+    "@dcl/asset-packs": "^1.18.1",
+    "@dcl/js-runtime": "7.5.0",
+    "@dcl/sdk": "^7.5.0"
   },
   "engines": {
     "node": ">=16.0.0",
@@ -25,6 +25,6 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "vlm-dcl": "^1.0.0-alpha.19"
+    "vlm-dcl": "^1.0.0-alpha.25"
   }
 }

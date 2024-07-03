@@ -2,15 +2,15 @@
   "ecs7": true,
   "runtimeVersion": "7",
   "display": {
-    "title": "Virtual Land Manager HQ",
-    "description": "Showcasing VLM for SDK7",
+    "title": "VLM Template Scene",
+    "description": "Change this description in scene.json",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
   "owner": "",
   "contact": {
-    "name": "Virtual Land Manager",
-    "email": "admin@vlm.gg"
+    "name": "Afagores",
+    "email": ""
   },
   "vlm": {
     "sceneId": "00000000-0000-0000-0000-000000000000"
@@ -19,26 +19,26 @@
   "tags": [],
   "scene": {
     "parcels": [
-      "0,0"
+      "104,60"
     ],
-    "base": "0,0"
+    "base": "104,60"
   },
   "spawnPoints": [
     {
-      "name": "spawn1",
+      "name": "Spawn Point 1",
       "default": true,
       "position": {
         "x": [
-          12,
-          3
+          7,
+          7
         ],
         "y": [
           0,
           0
         ],
         "z": [
-          12,
-          3
+          7,
+          7
         ]
       },
       "cameraTarget": {
@@ -52,5 +52,9 @@
     "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
     "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
   ],
-  "featureToggles": {}
+  "featureToggles": {
+    "voiceChat": "enabled",
+    "portableExperiences": "enabled"
+  },
+  "rating": "T"
 }
