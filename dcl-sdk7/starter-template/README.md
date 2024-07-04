@@ -10,7 +10,7 @@ _  _ _    ____ _    ____ _  _ ____ _  _ ___ ____
 |  | |    |___ |    |___ |\/| |___ |\ |  |  [__  
 |__| |    |___ |___ |___ |  | |___ | \|  |  ___] 
                                                                                                                                                                   
-Whem using VLM, please update your `ReactEcsRenderer` imports to import from `vlm-dcl` instead of `@dcl/sdk/react-ecs`.
+When using VLM, please update your `ReactEcsRenderer` imports to import from `vlm-dcl` instead of `@dcl/sdk/react-ecs`, or add VLM.UI() to your array of UI components.
 This allows VLM to extend your UI with its own components.
 
 -- EXAMPLE --
