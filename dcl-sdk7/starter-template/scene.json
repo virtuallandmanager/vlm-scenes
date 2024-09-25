@@ -19,13 +19,13 @@
   "tags": [],
   "scene": {
     "parcels": [
-      "104,60"
+      "0,0"
     ],
-    "base": "104,60"
+    "base": "0,0"
   },
   "spawnPoints": [
     {
-      "name": "Spawn Point 1",
+      "name": "Main Spawn Point",
       "default": true,
       "position": {
         "x": [
