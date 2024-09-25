@@ -1,111 +1,58 @@
+# Basic Starter Scene for Virtual Land Manager
 
-/*
- _    _        _______       ______ _______ _______ ______  _______ _______
-  \  /  |      |  |  |      |_____/ |______ |_____| |     \ |  |  | |______
-   \/   |_____ |  |  |      |    \_ |______ |     | |_____/ |  |  | |______
+This **Basic Starter Scene** serves as an entry point for building a new **Decentraland SDK7** scene with **Virtual Land Manager** installed. This scene provides a simple, foundational template that you can build upon when creating your own Decentraland experiences.
 
-----------------------------------------------------------------------------------------------------------------
+## Getting Started
 
-_  _ _    ____ _    ____ _  _ ____ _  _ ___ ____ 
-|  | |    |___ |    |___ |\/| |___ |\ |  |  [__  
-|__| |    |___ |___ |___ |  | |___ | \|  |  ___] 
-                                                                                                                                                                  
-When using VLM, please update your `ReactEcsRenderer` imports to import from `vlm-dcl` instead of `@dcl/sdk/react-ecs`, or add VLM.UI() to your array of UI components.
-This allows VLM to extend your UI with its own components.
+### Prerequisites
 
--- EXAMPLE --
+Ensure you have the following tools ready:
 
-BEFORE:
-import ReactEcs, { ReactEcsRenderer, UiEntity } from '@dcl/sdk/react-ecs'
+- **Visual Studio Code (VS Code)**  
+  Download and install VS Code from [here](https://code.visualstudio.com/).
 
-AFTER:
-import ReactEcs, { UiEntity } from '@dcl/sdk/react-ecs'
-import { ReactEcsRenderer } from 'vlm-dcl'
+- **Decentraland SDK7 Extension for VS Code**  
+  The Decentraland SDK7 extension will help you set up your scene. It also handles the installation of **Node.js** and other necessary dependencies for you. 
 
-----------------------------------------------------------------------------------------------------------------
-  ____   __  __ ____ _____ __ __ _____ ___   ____ ___  ______ ____   ___ 
- / __ \ / / / //  _// ___// //_// ___// _ \ / __// _ |/_  __// __ \ / _ \
-/ /_/ // /_/ /_/ / / /__ / ,<  / /__ / , _// _/ / __ | / /  / /_/ // , _/
-\___\_\\____//___/ \___//_/|_| \___//_/|_|/___//_/ |_|/_/   \____//_/|_| 
-                                                                         
-                                                                                             
-vvvv COPY THIS IMPORT TO THE TOP OF THE FILE TO USE QUICKCREATOR vvvv
-import { QuickCreator } from 'vlm-dcl'
+  Follow the steps in the [Decentraland SDK7 Installation Guide](https://docs.decentraland.org/creator/development-guide/sdk7/installation-guide/) for detailed instructions on installing the extension and setting up your environment.
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
-+-+-+-+-+-+-+
-|I|M|A|G|E|S|
-+-+-+-+-+-+-+
+### Setting Up the Scene
 
-//// -- Adding an image with QuickCreator.Image() -- \\\\
-To add a GLB from your /models folder, 
-you just need to add the name of the file as a string to the "path" property.
+1. **Open Visual Studio Code**  
+   After you’ve installed VS Code, launch it on your machine.
 
-•·················• CODE EXAMPLE •·················•
-new QuickCreator.Image({
-  path: 'https://picsum.photos/1920/1080',
-  position: { x: 5, y: 3, z: 0 },
-  scale: { x: 1.92, y: 1.08, z: 1 },
-  rotation: { x: 0, y: 90, z: 0 }
-})
-•·························•························•
-///////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
+2. **Install the Decentraland SDK7 Extension**  
+   To install the Decentraland SDK7 extension, follow these steps:
+   - Open the **Extensions** view (`Ctrl+Shift+X` or `Cmd+Shift+X` on Mac).
+   - Search for **Decentraland SDK7** and install it.
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
-+-+-+-+-+-+ +-+-+-+-+-+-+-+
-|V|I|D|E|O| |S|C|R|E|E|N|S|
-+-+-+-+-+-+ +-+-+-+-+-+-+-+
+3. **Create a New Scene via the Decentraland SDK7 Extension**  
+   Once the extension is installed:
+   - Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+   - Search for `Decentraland: Create Project` and select it.
 
-//// -- Adding a video with QuickCreator.Video() -- \\\\
-- 'liveUrl' will be used when the stream is live.
-- 'playlist' will be looped through when the stream is offline.
+4. **Choose "From Github Repository" Option**  
+   When prompted, choose **From Github Repository**. This will let you initialize a new scene from a GitHub repository.
 
-•·················• CODE EXAMPLE •·················•
-new QuickCreator.VideoScreen({
-  liveUrl: 'https://streams.vlm.gg/live/vlm/index.m3u8',
-  playlist: ['https://api.vlm.gg/media/demo-video/1.mp4', 'https://api.vlm.gg/media/demo-video/2.mp4'],
-  position: { x: 5, y: 5, z: 8 },
-  scale: { x: 1.92, y: 1.08, z: 0.1 },
-  rotation: { x: 0, y: 90, z: 0 }
-})
-•·························•························•
-///////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
+5. **Enter the Repository URL**  
+   Copy the following URL and paste it into the text field provided by the Decentraland SDK7 extension:
+   ```
+   https://github.com/virtuallandmanager/vlm-scenes/tree/main/dcl-sdk7/starter-template
+   ```
+   Press `Enter` to confirm.
 
+### Customizing the Scene
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
-+-+-+ +-+-+-+-+-+-+
-|3|D| |M|O|D|E|L|S|
-+-+-+ +-+-+-+-+-+-+
+After setting up the **Basic Starter Scene**, you can begin customizing it by modifying the code in the scene's files. Here are key files to explore:
+- `index.ts`: Main logic for your scene.
+- `scene.json`: Scene configuration.
 
--- Adding a GLB with QuickCreator.Mesh() --
-- By default, looks within the /models folder for the GLB. 
-- Just add file name as a string to the "path" property.
+Add new assets, interactions, and additional content to personalize the experience.
 
-•·················• CODE EXAMPLE •·················•
-new QuickCreator.Mesh({
-  path: 'building.glb',
-  position: { x: 8, y: 3, z: 8 }
-})
-•·························•························•
-///////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
+### Learn More
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
- +-+-+-+-+-+ +-+-+-+-+-+
- |D|A|N|C|E| |F|L|O|O|R|
- +-+-+-+-+-+ +-+-+-+-+-+
+For more detailed documentation about the Decentraland SDK7 and the Virtual Land Manager, visit:
+- [Decentraland SDK Documentation](https://docs.decentraland.org/)
+- [Virtual Land Manager](https://docs.vlm.gg)
 
--- Adding an auto-dance area with QuickCreator.DanceFloor() --
-- Sets up a cube where people will dance when their feet are inside it.
-- Toggle the auto-dance with VLM.toggleAutoDance()
-- To set a certain auto-dance state, use VLM.toggleAutoDance(true) or VLM.toggleAutoDance(false)
-
-•·················• CODE EXAMPLE •·················•
-new QuickCreator.DanceFloor({
-      position: { x: 0, y: 8, z: 8 },
-      scale: { x: 32, y: 26, z: 16 },
-      debug: false, // optional - shows a box where the dance floor to see the position during development
-      enabledOnLoad: true // optional - if false, the dance floor will be disabled when the scene loads. 
-    })
-•·························•························•
-///////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
-*/
+---

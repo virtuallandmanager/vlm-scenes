@@ -1,7 +1,7 @@
 {
-  "name": "dcl-project",
+  "name": "vlm-starter-scene",
   "version": "1.0.0",
-  "description": "VLM SDK7 Starter Template scene",
+  "description": "VLM SDK7 Starter Template Scene",
   "scripts": {
     "start": "sdk-commands start",
     "deploy": "sdk-commands deploy",
@@ -10,9 +10,9 @@
     "upgrade-sdk:next": "npm install --save-dev @dcl/sdk@next"
   },
   "devDependencies": {
-    "@dcl/asset-packs": "^1.18.1",
-    "@dcl/js-runtime": "7.5.0",
-    "@dcl/sdk": "^7.5.0"
+    "@dcl/asset-packs": "^1.20.0",
+    "@dcl/js-runtime": "7.5.6",
+    "@dcl/sdk": "^7.5.6"
   },
   "engines": {
     "node": ">=16.0.0",
@@ -25,6 +25,6 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "vlm-dcl": "^1.0.0-alpha.25"
+    "vlm-dcl": "sdk7"
   }
 }
